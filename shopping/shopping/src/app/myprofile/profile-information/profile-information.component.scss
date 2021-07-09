@@ -1,0 +1,31 @@
+.form-box{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap;
+}
+.form-box mat-form-field{
+    flex: 1;
+    margin-left: 10px;
+}
+#profile{
+    min-height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    background-image: url('../../../assets/img.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card{
+    position: relative;
+}
+.card .bt{
+    position: absolute;
+    top: 120px;
+    left: 170px;
+    display: none;
+}
+.card:hover .bt{
+    display: block;
+}

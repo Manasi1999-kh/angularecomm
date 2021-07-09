@@ -1,0 +1,163 @@
+<!-- <div class="shopping-cart-conatiner">
+
+    <div class="title">
+        My Cart
+    </div>
+    <div class="header">
+
+
+        <div class="img">
+
+        </div>
+        <div class="name">
+            Product
+        </div>
+        <div class="price">
+            Price
+        </div>
+        <div class="quantity">
+            Quantity
+        </div>
+        <div class="total">
+            Total
+        </div>
+        <div class="close">
+
+        </div>
+    </div>
+
+    <div class="body" *ngFor="let item of cart">
+
+        <div class="img">
+
+            <img class="productImg" src="{{item.image}}" >
+        </div>
+        <div class="name">
+            <h3> NIKE FREE RN 2019 ID</h3>
+            <p> Far far away, behind the word mountains, far from the countries</p>
+        </div>
+        <div class="price">
+           
+        </div>
+        <div class="quantity">
+            <mat-icon class="close-icon">add</mat-icon><input
+                style="height: 20px; margin-right: 5px; text-align: center;" type="text" size="1" value="1" />
+            <mat-icon class="close-icon">remove</mat-icon>
+        </div>
+        <div class="total">
+            
+
+        </div>
+        <div class="close">
+            <mat-icon class="close-icon">close</mat-icon>
+        </div>
+
+    </div>
+
+
+
+    <div class="cart-total">
+        <h2>CART TOTALS</h2>
+        <hr>
+        <table style="width: 100%">
+            <tr>
+                <td>Subtotal</td>
+                <td>$20.60</td>
+            </tr>
+            <tr>
+                <td>Delivery</td>
+                <td>$0.60</td>
+            </tr>
+            <tr>
+                <td>Discount</td>
+                <td>$0.60</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                    
+                <td>Total</td>
+                <td><b>$10.60</b></td>
+            </tr>
+        </table>
+        <div class="checkout-button">
+            <button mat-stroked-button color="primary" class="button full-button">PROCEED TO CHECKOUT</button>
+        </div>
+    </div>
+
+</div> -->
+
+<section id="intro">
+    <div class="container" *ngIf="!this.productService.getCartNumber()">
+        <h1>Cart is Empty!Add item to the cart</h1>
+        <a routerLink="/products">Click here</a> to Shop
+    </div>
+    <div class="container" style="padding-top: 50px;" *ngIf="this.productService.getCartNumber()">
+        <div class="row">
+            <div class="col-md-8 col-10 mx-auto">
+                <div class="table-responsive">
+                    <table class="table table-striped table-collapse table-primary table-hover">
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let p of this.productService.cartProducts">
+                                <td>
+                                    <img src="{{p.image}}" style="height: 80px;width: 80px;" alt="">
+                                </td>
+                                <td>
+                                    {{p.name}}
+                                </td>
+                                <td>
+                                    <button class="btn btn-danger btn-sm"
+                                        (click)="this.productService.decrement(p.id)">-</button>
+                                    {{p.cart}}
+                                    <button class="btn btn-success btn-sm"
+                                        (click)="this.productService.increment(p.id)">+</button>
+                                </td>
+                                <td>
+                                    {{p.price * p.cart | currency:'INR'}}
+                                </td>
+                                <td>
+                                    <button mat-raised-button color="accent"
+                                        (click)="this.productService.removeItem(p.id)">Remove</button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Total</td>
+                                <td>{{this.productService.totalPrice() | currency:'INR'}}</td>
+                                <td></td>
+                            </tr>
+                            <td>
+                                <button mat-raised-button color="accent" class="mt-5"
+                                    [routerLink]="['/myprofile/address']" routerLinkActive="active"
+                                    class="checkout-button">Proceed To Checkout</button>
+                            </td>
+
+
+
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <app-manage-address></app-manage-address> -->

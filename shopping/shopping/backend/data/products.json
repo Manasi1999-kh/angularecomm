@@ -1,0 +1,137 @@
+ {
+     "products":
+       [{
+            "id": 1,
+            "price":2199,
+            "cart":0,
+            "name": "Puma Men Black Mesh Running Shoes",
+            "image": "https://images.unsplash.com/photo-1598313697935-b4d757c226c2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2hvZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          },
+          {
+            "id": 2,
+            "price":899,
+            "cart":0,
+            "name": "HERE&NOW Regular Fit Checked Casual Shirt",
+            "image": "https://images.unsplash.com/photo-1542327821-87a5f0fb3c9f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGNyYXN1YWwlMjBzaGlydHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          },
+          {
+            "id": 3,
+            "price":1399,
+            "cart":0,
+            "name": "SASSAFRAS women floral empire dress",
+            "image": "https://images.unsplash.com/photo-1588189408846-30ad110a0f4c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHdvbWVuJTIwZmxvd2VyJTIwZHJlc3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          },
+          {
+            "id": 4,
+            "price":1499,
+            "cart":0,
+            "name": "SASSAFRAS Maroon Solid Tiered Maxi Dress",
+            "image": "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bWF4aSUyMGRyZXNzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          },
+          {
+            "id": 5,
+            "price":3460,
+            "cart":0,
+            "name": "Home Centre Set Of 5 Blue Delight Merlon Non-Stick Cookware Set",
+            "image": "https://images.unsplash.com/photo-1484632152040-840235adc262?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80"
+          },
+          {
+            "id": 6,
+            "price":4789,
+            "cart":0,
+            "name": "MANYAVAR grey sophisticated sherwani",
+            "image": "https://images.unsplash.com/photo-1610047402714-307d99a677db?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2hlcndhbml8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          },
+          {
+            "id": 7,
+            "price":549,
+            "cart":0,
+            "name": "Roadster-The Woods Body Spray 150 ml",
+            "image": "https://images.unsplash.com/photo-1604523412953-ec5f89b57be3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Ym9keSUyMHNwcmF5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          },
+          {
+            "id": 8,
+            "price":2287,
+            "cart":0,
+            "name": "Inddus Green Embellished Semi-Stitched Lehenga & Blouse with Dupatta",
+            "image": "https://images.unsplash.com/photo-1574847872646-abff244bbd87?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGVoZW5nYXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          },
+          {
+            "id": 9,
+            "price":789,
+            "cart":0,
+            "name": "HIGHLANDER Men Olive Green Slim Fit Solid Cargos",
+            "image": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2018/12/5/666d6c8b-c6ac-4a04-930f-76c6791d18e61544001241563-2.jpg"
+          },
+          {
+            "id": 10,
+            "price":696, 
+            "cart":0,
+            "name": "HIGHLANDER Men White Sneakers",
+            "image": "https://images.unsplash.com/photo-1552346154-21d32810aba3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c25lYWtlcnN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          },
+          {
+            "id": 11,
+            "price":120,
+            "cart":0,
+            "name": "Morning Greens",
+            "image": "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          },
+          {
+            "id": 12,
+            "price":584,
+            "cart":0,
+            "name": "HERE&NOW mens solid hooded sweatshirt",
+            "image": "https://images.unsplash.com/photo-1588359348347-9bc6cbbb689e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+          },
+          {
+            "id": 13,
+            "price":899,
+            "cart":0,
+            "name": "TAAVI women black kurta",
+            "image": "https://images.unsplash.com/photo-1550639525-c97d455acf70?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZHJlc3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          },
+          {
+            "id": 14,
+            "price":468,
+            "cart":0,
+            "name": "THE BODY SHOP Shea Butter Shampoo - 250ml",
+            "image": "https://images.unsplash.com/photo-1614806687792-7fcec07dcbbd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHNvYXB8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          },
+          {
+            "id": 15,
+            "price":2869,
+            "cart":0,
+            "name": "Story@home Unisex Grey & Blue Floral Print Bedding Set",
+            "image": "https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVkfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          }
+        ],
+     "similarProducts":[
+        {
+            "id": 1,
+            "price":120,
+            "name": "Everfresh Flowers",
+            "image": "https://ledscreensandlights.com/wp-content/uploads/2018/08/9.gif"
+          },
+          {
+            "id": 2,
+            "price":120,
+            "name": "Festive Deer",
+            "image": "https://cdn140.picsart.com/268948212025211.png?r1024x1024"
+          },
+          {
+            "id": 3,
+            "price":120,
+            "name": "Morning Greens",
+            "image": "http://pluspng.com/img-png/shoes-png-sneaker-png-transparent-image-2500.png"
+          },
+          {
+            "id": 4,
+            "price":120,
+            "name": "Everfresh Flowers",
+            "image": "https://i.pinimg.com/236x/36/9f/4c/369f4c4013e19c9b3c671de3dc696d2b.jpg"
+          }
+     ]
+    
+
+    }

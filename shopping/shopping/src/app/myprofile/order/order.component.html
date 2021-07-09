@@ -1,0 +1,38 @@
+<section id="intro">
+    <div class="container" style="padding-top: 80px;">
+        <h1 class="text-center">Total Ordered</h1>
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="table-responsive">
+                    <table class="table table-collapse table-warning table-hover table-striped shadow" >
+                        <thead>
+                            <tr>
+                                <th>Order Id</th>
+                                <th>Item Quantity</th>
+                                <th>Price</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let p of this.productService.orderedProducts">
+                                <td>
+                                    {{p._id}}
+                                </td>
+                                <td>
+                                    {{p.totalQuantity}}
+                                </td>
+                                <td>
+                                    {{p.totalPrice | currency:'INR'}}
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+     
+    </div>
+</section>

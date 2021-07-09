@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-10 mx-auto">
+    <h3>Manage Addresses</h3>
+     <div class="box">
+        <!-- <mat-icon style="vertical-align: middle;">add</mat-icon> &nbsp; &nbsp; -->
+        <!-- <span style="font-size: 14px; color: #3f51b5;cursor: pointer;" (click)="openAddress()" >Add A New Address</span> -->
+    </div> <br>
+    <!-- <div class="conatiner" >
+        <div class="row">
+            <div class="col-md-10 col-10 mx-auto" style="display: flex;justify-content: flex-start;align-content: center;">
+                <input type="radio"> Address
+            </div>
+            <button mat-raised-button color="primary"
+            style="width: 200px;">Placed Order</button>
+        </div>
+    </div> -->
+    <div class="address-form">
+        <form #addressForm="ngForm" (ngSubmit)="submitAddress(addressForm)" novalidate >
+
+            <div class="form-box">
+                <mat-form-field appearance="outline">
+                    <mat-label>First name</mat-label>
+                    <input matInput required ngModel #fnameField="ngModel" name="fname" placeholder="Enter your first name">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Last name</mat-label>
+                    <input matInput required ngModel #lnameField="ngModel" name="lname" placeholder="Enter your last name">
+                </mat-form-field>
+            </div>
+            <div class="form-box">
+                <mat-form-field appearance="outline">
+                    <mat-label>Pincode</mat-label>
+                    <input matInput required ngModel #pincodeField="ngModel" name="pincode" placeholder="Enter your pincode">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Locality</mat-label>
+                    <input matInput required ngModel #localityField="ngModel" name="locality" placeholder="Enter locality">
+                </mat-form-field>
+            </div>
+            <mat-form-field appearance="outline" style="width: 100%">
+                <mat-label>Address</mat-label>
+                <textarea matInput required ngModel #addressField="ngModel" name="address" placeholder="Enter full address"></textarea>
+            </mat-form-field>
+            <div class="form-box">
+                <button type="submit" mat-button mat-raised-button [disabled]="!addressForm.valid" color="primary"   class="buy-now-button">PROCEED TO CHECKOUT
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+</div>
+</div>

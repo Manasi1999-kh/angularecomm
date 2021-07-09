@@ -1,0 +1,77 @@
+<!-- <form class="example-form">
+  <input type="text" value="{{this.loginService.user.name}}" class="form-control" placeholder="Enter your name">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Email</mat-label>
+    <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+      placeholder="your email">
+    <mat-hint>Errors appear instantly!</mat-hint>
+    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+      Please enter a valid email address
+    </mat-error>
+    <mat-error *ngIf="emailFormControl.hasError('required')">
+      Email is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+  <div>
+    <label>Gender: </label>
+    <mat-radio-group [formControl]="floatLabelControl">
+      <mat-radio-button value="auto">male</mat-radio-button>
+      <mat-radio-button value="always">female</mat-radio-button>
+    </mat-radio-group>
+  </div>
+  <br>
+  <input type="number" class="form-control" placeholder="your mobile number">
+  <br>
+  <input type="any" class="form-control" placeholder="Your date of birth"><br>
+  <input type="any" class="form-control" placeholder="Pincode"><br>
+  <input type="any" class="form-control" placeholder="Locality"><br>
+
+  <div class="form-box">
+    <button mat-raised-button color="primary">SAVE</button>
+  </div>
+</form> -->
+
+<h2 mat-dialog-title>Edit Details</h2>
+<mat-dialog-content class="mat-typography">
+  <form #f="ngForm" (ngSubmit)="submitAdd(f)">
+    <div class="form-group mb-3">
+      <label for="">Name</label>
+      <input type="text" class="form-control" placeholder="Enter Name" name="name"
+        [(ngModel)]="this.loginService.user.name">
+    </div>
+    <div class="form-group mb-3">
+      <label for="">Email</label>
+      <input type="email" class="form-control" placeholder="Enter Email" name="email"
+        [(ngModel)]="this.loginService.user.email">
+    </div>
+    <div class="form-group mb-3">
+      <label for="">Gender</label>
+      <div style="display: flex;justify-content: flex-start; align-items: center;">
+        <input type="radio" value="male" name="gender"  [(ngModel)]="this.loginService.user.gender">&nbsp; Male
+        <input type="radio" value="female" name="gender"  [(ngModel)]="this.loginService.user.gender" style="margin-left: 20px;">&nbsp; Female
+      </div>
+    </div>
+    <div class="form-group mb-3">
+      <label for="">Phone</label>
+      <input type="number" class="form-control" name="phone" [(ngModel)]="this.loginService.user.phone"
+        placeholder="Enter Phone Number">
+    </div>
+    <div class="form-group mb-3">
+      <label for="">Date Of birth</label>
+      <input type="date" class="form-control" name="dob" [(ngModel)]="this.loginService.user.dob"
+        placeholder="Enter Email">
+    </div>
+    <div class="form-group mb-3">
+      <label for="">Pincode</label>
+      <input type="number" class="form-control" name="pincode" [(ngModel)]="this.loginService.user.pincode"
+        placeholder="Enter pincode">
+    </div>
+    <div class="form-group mb-3">
+      <label for="">Locality</label>
+      <input type="text" class="form-control" name="locality" [(ngModel)]="this.loginService.user.locality"
+        placeholder="Enter Locality">
+    </div>
+    <button mat-raised-button color="accent" mat-dialog-close >Save</button>
+
+  </form>
+</mat-dialog-content>

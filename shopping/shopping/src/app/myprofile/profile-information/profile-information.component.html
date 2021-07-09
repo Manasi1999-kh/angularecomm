@@ -1,0 +1,25 @@
+<section id="profile">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-10 mx-auto">
+                <div class="card">
+                    <img src="{{this.loginService.user.image}}" 
+                    style="height: 150px;width: 150px;border-radius: 50%;margin: 0 auto;" alt="">
+                    <button mat-raised-button class="bt" color="warn" (click)="openDialog()">Upload Image</button>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <p>Name : {{this.loginService.user.name}}</p>
+                            <p>Email : {{this.loginService.user.email}}</p>
+                            <p>Gender : {{this.loginService.user.gender}}</p>
+                            <p>Phone : {{this.loginService.user.phone}}</p>
+                            <p>Date of Birth : {{this.loginService.user.dob}}</p>
+                            <p>Pincode : {{this.loginService.user.pincode}}</p>
+                            <p>Locality : {{this.loginService.user.locality}} </p>
+                        </div>
+                    </div>
+                    <button mat-raised-button color="accent" (click)="openEditDialog()" >Edit Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
